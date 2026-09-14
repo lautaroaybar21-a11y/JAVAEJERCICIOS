@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+  // Declaración de la variable 'grade' que almacena la nota a evaluar
+  var grade = 'A';
+
+  // Imprimimos un mensaje de inicio antes de entrar a la estructura de control
+  document.write("Entering switch block<br />");
+
+  // Estructura switch que evalúa el valor contenido en la variable 'grade'
+  switch (grade) {
+
+    // Si 'grade' es igual a 'A'
+    case 'A': 
+      document.write("Good job<br />");
+      break; // Sale del bloque switch si se cumple este caso
+
+    // Si 'grade' es igual a 'B'
+    case 'B': 
+      document.write("Pretty good<br />");
+      break; // Sale del bloque switch
+
+    // Si 'grade' es igual a 'C'
+    case 'C': 
+      document.write("Passed<br />");
+      break; // Sale del bloque switch
+
+    // Si 'grade' es igual a 'D'
+    case 'D': 
+      document.write("Not so good<br />");
+      break; // Sale del bloque switch
+
+    // Si 'grade' es igual a 'F'
+    case 'F': 
+      document.write("Failed<br />");
+      break; // Sale del bloque switch
+
+    // Si el valor de 'grade' no coincide con ninguno de los casos anteriores
+    default: 
+      document.write("Unknown grade<br />");
+  }
+
+  // Imprimimos un mensaje indicando que se completó la ejecución del switch
+  document.write("Exiting switch block");
+
+</script>
+
+<!-- Texto informativo en el cuerpo de la página HTML -->
+<p>Set the variable to different value and then try...</p>
+
+</body>
+</html>

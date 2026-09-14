@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+  // Declaramos la variable 'grade' con el valor 'A'
+  var grade = 'A';
+
+  // Imprimimos el mensaje inicial
+  document.write("Entering switch block<br />");
+
+  // Al NO usar 'break' en ningún caso, se produce un efecto "fall-through":
+  // Entra en el caso 'A' y ejecuta el código de TODOS los casos siguientes hacia abajo.
+  switch (grade) {
+
+    case 'A': 
+      document.write("Good job<br />");
+      // Sin break: continúa directo al siguiente caso
+
+    case 'B': 
+      document.write("Pretty good<br />");
+      // Sin break: continúa directo al siguiente caso
+
+    case 'C': 
+      document.write("Passed<br />");
+      // Sin break: continúa directo al siguiente caso
+
+    case 'D': 
+      document.write("Not so good<br />");
+      // Sin break: continúa directo al siguiente caso
+
+    case 'F': 
+      document.write("Failed<br />");
+      // Sin break: continúa directo al default
+
+    default: 
+      document.write("Unknown grade<br />");
+  }
+
+  // Imprimimos el mensaje de cierre del switch
+  document.write("Exiting switch block");
+
+</script>
+
+<!-- Texto explicativo final en HTML -->
+<p>Set the variable to different value and then try...</p>
+
+</body>
+</html>

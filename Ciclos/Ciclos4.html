@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+  // Declaramos la variable que usaremos como clave en la iteración
+  var aProperty;
+
+  // Imprimimos el título inicial antes de comenzar a recorrer el objeto
+  document.write("Navigator Object Properties<br />");
+
+  // Bucle 'for...in': recorre una a una todas las propiedades del objeto 'navigator'
+  for (aProperty in navigator) {
+
+    // Escribe el nombre de la propiedad actual en el documento
+    document.write(aProperty);
+
+    // Agrega un salto de línea en HTML para que la siguiente propiedad aparezca abajo
+    document.write("<br />");
+  }
+
+  // Mensaje final que indica que el bucle terminó de iterar sobre todas las propiedades
+  document.write("Exiting from the loop!");
+
+</script>
+
+<!-- Texto descriptivo fuera del bloque JavaScript -->
+<p>Set the variable to different object and then try...</p>
+
+</body>
+</html>

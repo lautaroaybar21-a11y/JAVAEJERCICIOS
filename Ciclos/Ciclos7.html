@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+  // Imprime el mensaje de inicio antes de comenzar las iteraciones
+  document.write("Entering the loop!<br /> ");
+
+  // Etiqueta 'outerloop:' identificador para referenciar al bucle externo
+  outerloop: 
+  for (var i = 0; i < 5; i++) {
+
+    // Imprime el número de iteración actual del bucle externo
+    document.write("Outerloop: " + i + "<br />");
+
+    // Etiqueta 'innerloop:' identificador para el bucle interno
+    innerloop:
+    for (var j = 0; j < 5; j++) {
+
+      // Condición 1: Si 'j' supera el valor 3, interrumpe el bucle interno
+      if (j > 3) break; // Sale únicamente de 'innerloop'
+
+      // Condición 2: Si 'i' vale 2, interrumpe explícitamente el bucle interno marcado
+      if (i == 2) break innerloop; // Hace lo mismo que el break anterior pero especificando la etiqueta
+
+      // Condición 3: Si 'i' vale 4, interrumpe completamente el bucle externo 'outerloop'
+      if (i == 4) break outerloop; // Sale de ambos bucles y termina la ejecución
+      
+      // Imprime el valor actual de 'j' en el bucle interno si no se activó ningún 'break'
+      document.write("Innerloop: " + j + " <br />");
+    }
+  }
+
+  // Imprime el mensaje final cuando terminan o se rompen las iteraciones
+  document.write("Exiting the loop!<br /> ");
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html> 
+<body> 
+
+<script type="text/javascript"> 
+  // Declaración de variables booleanas y salto de línea
+  var a = true; 
+  var b = false; 
+  var linebreak = "<br />"; 
+
+  // OPERADOR LÓGICO Y / AND (&&): 
+  // Devuelve true SOLO si ambos operandos son true. 
+  // En este caso, (true && false) da como resultado false.
+  document.write("(a && b) => "); 
+  result = (a && b); 
+  document.write(result); 
+  document.write(linebreak); 
+
+  // OPERADOR LÓGICO O / OR (||): 
+  // Devuelve true si AL MENOS UNO de los operandos es true. 
+  // En este caso, (true || false) da como resultado true.
+  document.write("(a || b) => "); 
+  result = (a || b); 
+  document.write(result); 
+  document.write(linebreak); 
+
+  // OPERADOR LÓGICO NO / NOT (!): 
+  // Invierte el valor booleano resultante. 
+  // Primero evalúa (a && b) que es false, y luego el ! lo convierte en true.
+  document.write("!(a && b) => "); 
+  result = (!(a && b)); 
+  document.write(result); 
+  document.write(linebreak); 
+</script> 
+
+<p>Set the variables to different values and different operators and then try...</p> 
+</body> 
+</html>

@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  // Declaramos una variable global accesible desde cualquier lugar del script
+  var myVar = "global"; 
+
+  // Definimos la función para probar el alcance (scope) de las variables
+  function checkscope() { 
+    // Declaramos una variable local con el mismo nombre. 
+    // Esta variable solo existe dentro de esta función y "oculta" a la variable global.
+    var myVar = "local";  
+    
+    // Escribimos en el documento HTML el valor de la variable local ("local")
+    document.write(myVar); 
+  } 
+
+  // Llamamos a la función para que se ejecute e imprima el texto en pantalla
+  checkscope(); 
+</script>

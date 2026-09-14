@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+  // Declaración e inicialización de la variable contador
+  var x = 1;
+
+  // Imprimimos el mensaje de inicio antes de entrar al bucle
+  document.write("Entering the loop<br /> ");
+
+  // Bucle while: se ejecutará mientras 'x' sea menor a 10
+  while (x < 10) {
+
+    // Incrementamos el valor de 'x' en 1 en cada iteración
+    x = x + 1;
+
+    // Condición: si 'x' es exactamente igual a 5
+    if (x == 5) {
+       // 'continue' salta el resto del código dentro del bucle 
+       // para esta iteración y pasa directo a la siguiente vuelta
+       continue; 
+    }
+
+    // Imprime el valor actual de 'x' seguido de un salto de línea (salvo cuando x vale 5)
+    document.write(x + "<br />");
+  }
+
+  // Imprimimos el mensaje final al terminar el bucle
+  document.write("Exiting the loop!<br /> ");
+
+</script>
+
+<!-- Texto descriptivo en el cuerpo del documento HTML -->
+<p>Set the variable to different value and then try...</p>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores de Asignación en JavaScript</title>
+</head>
+<body>
+
+<script>
+    // Declaración e inicialización de variables
+    let a = 33;
+    let b = 10;
+    const linebreak = "<br />";
+
+    // 1. Asignación simple (=)
+    // Asigna el valor de 'b' (10) a 'a'. Ahora 'a' vale 10.
+    document.write("Value of a => (a = b) => ");
+    let result = (a = b);
+    document.write(result); // Muestra: 10
+    document.write(linebreak);
+
+    // 2. Asignación con suma (+=)
+    // Equivale a: a = a + b  -->  a = 10 + 10  -->  'a' pasa a valer 20.
+    document.write("Value of a => (a += b) => ");
+    result = (a += b);
+    document.write(result); // Muestra: 20
+    document.write(linebreak);
+
+    // 3. Asignación con resta (-=)
+    // Equivale a: a = a - b  -->  a = 20 - 10  -->  'a' vuelve a valer 10.
+    document.write("Value of a => (a -= b) => ");
+    result = (a -= b);
+    document.write(result); // Muestra: 10
+    document.write(linebreak);
+
+    // 4. Asignación con multiplicación (*=)
+    // Equivale a: a = a * b  -->  a = 10 * 10  -->  'a' pasa a valer 100.
+    document.write("Value of a => (a *= b) => ");
+    result = (a *= b);
+    document.write(result); // Muestra: 100
+    document.write(linebreak);
+
+    // 5. Asignación con división (/=)
+    // Equivale a: a = a / b  -->  a = 100 / 10  -->  'a' pasa a valer 10.
+    document.write("Value of a => (a /= b) => ");
+    result = (a /= b);
+    document.write(result); // Muestra: 10
+    document.write(linebreak);
+
+    // 6. Asignación con módulo o resto (%=)
+    // Equivale a: a = a % b  -->  a = 10 % 10  -->  el resto de la división es 0.
+    document.write("Value of a => (a %= b) => ");
+    result = (a %= b);
+    document.write(result); // Muestra: 0
+    document.write(linebreak);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+  // 1. Declaración de las variables iniciales
+  var a = 10;                // Guardamos un número en 'a'
+  var b = "String";          // Guardamos una cadena de texto en 'b'
+  var linebreak = "<br />";   // Etiqueta HTML para hacer un salto de línea en la página
+
+  // 2. Evaluamos el tipo de dato de la variable 'b'
+  // 'typeof b' devuelve "string". Como "string" == "string" es VERDADERO, 
+  // el operador ternario (condicion ? si_verdadero : si_falso) elige "B is String".
+  var result = (typeof b == "string") ? "B is String" : "B is Numeric";
+
+  // Mostramos el primer resultado en la pantalla
+  document.write("Result => ");
+  document.write(result);
+  document.write(linebreak);
+
+  // 3. Evaluamos el tipo de dato de la variable 'a'
+  // 'typeof a' devuelve "number". Como "number" == "string" es FALSO, 
+  // el operador ternario elige "A is Numeric".
+  result = (typeof a == "string") ? "A is String" : "A is Numeric";
+
+  // Mostramos el segundo resultado en la pantalla
+  document.write("Result => ");
+  document.write(result);
+  document.write(linebreak);
+
+</script>
+
+<p>Set the variables to different values and different operators and then try...</p>
+
+</body>
+</html>

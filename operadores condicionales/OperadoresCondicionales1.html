@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operador Ternario en JavaScript</title>
+</head>
+<body>
+
+<script>
+    // 1. Declaración e inicialización de variables con let/const (estándar moderno)
+    let a = 10;
+    let b = 20;
+    const linebreak = "<br />";
+
+    // 2. Primer uso del operador ternario
+    // Estructura: (condición) ? valor_si_verdadero : valor_si_falso
+    // Evaluación: ¿10 es mayor que 20? (a > b) -> FALSO
+    // Como es FALSO, toma el segundo valor (200).
+    document.write("((a > b) ? 100 : 200) => ");
+    let result = (a > b) ? 100 : 200;
+    document.write(result); // Muestra: 200
+    document.write(linebreak);
+
+    // 3. Segundo uso del operador ternario
+    // Evaluación: ¿10 es menor que 20? (a < b) -> VERDADERO
+    // Como es VERDADERO, toma el primer valor (100).
+    document.write("((a < b) ? 100 : 200) => ");
+    result = (a < b) ? 100 : 200;
+    document.write(result); // Muestra: 100
+    document.write(linebreak);
+</script>
+
+</body>
+</html>
